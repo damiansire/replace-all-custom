@@ -11,7 +11,7 @@ npm install replace-all-custom
 ## Usage
 
 ```javascript
-import replaceAllCustom from "replace-all-custom";
+const replaceAllCustom = require("replace-all-custom");
 
 const originalText = "Hello, world! Hello, everyone!";
 const replacements = {

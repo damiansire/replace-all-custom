@@ -1,14 +1,20 @@
 {
   "name": "replace-all-custom",
-  "version": "1.0.0",
+  "version": "1.0.7",
   "main": "dist/index.js",
-  "type": "module",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "test": "jest",
-    "test:publish": "npm publish --dry-run"
+    "test:publish": "npm publish --dry-run",
+    "publish": "npm run build && npm run test && npm publish"
   },
+  "files": [
+    "dist/**/*",
+    "LICENSE",
+    "README.md",
+    "package.json"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",

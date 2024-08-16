@@ -17,3 +17,8 @@ function replaceAllCustom(
 }
 
 export default replaceAllCustom;
+
+// For CommonJS default export support
+module.exports = replaceAllCustom;
+module.exports.default = replaceAllCustom;
+module.exports.__esModule = true;
